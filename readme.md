@@ -211,4 +211,3 @@ Solution: The current implementation randomizes results - modify the JavaScript 
    - Development notes
    - Troubleshooting guide
 
-The README provides complete documentation for developers to understand, run, and test the application, as well as extend it in the future. The BDD scenarios are clearly outlined for each feature area, and the testing instructions make it easy to verify all functionality.
