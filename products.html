@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini E-Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>Our Products</h2>
+            <div class="product-grid">
+                <div class="product">
+                    <h3>Product 1</h3>
+                    <p>$19.99</p>
+                    <button onclick="addToCart('Product 1', 19.99)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Product 2</h3>
+                    <p>$29.99</p>
+                    <button onclick="addToCart('Product 2', 29.99)">Add to Cart</button>
+                </div>
+                <div class="product">
+                    <h3>Product 3</h3>
+                    <p>$39.99</p>
+                    <button onclick="addToCart('Product 3', 39.99)">Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Mini E-Commerce</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="registration.html">Register</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="shopping-cart">
+            <h2>Your Shopping Cart</h2>
+            <div id="cart-items">
+                <!-- Cart items will be displayed here -->
+            </div>
+            <div class="cart-summary">
+                <p>Subtotal: $<span id="subtotal">0.00</span></p>
+                <div>
+                    <label for="discount-code">Discount Code:</label>
+                    <input type="text" id="discount-code">
+                    <button onclick="applyDiscount()">Apply</button>
+                </div>
+                <p id="discount-message"></p>
+                <p>Total: $<span id="total">0.00</span></p>
+                <button onclick="proceedToCheckout()">Proceed to Checkout</button>
+            </div>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
